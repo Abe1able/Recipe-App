@@ -45,8 +45,7 @@
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
-### ERD Diagram <a name="diagram">
-![Preview](./app/assets/images/recipe-app.png)
+
 
 <!-- Features -->
 
