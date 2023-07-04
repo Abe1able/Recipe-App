@@ -109,11 +109,6 @@ To run the project, execute the following command:
 - GitHub: [@SabaAhmad404](https://github.com/SabaAhmad404)
 - LinkedIn: [Saba Ahmad](https://www.linkedin.com/in/saba-ahmad-97b938244/)
 
-👤 **Sharon Kessio**
-
-- GitHub: [@kessio](https://github.com/kessio)
-- Twitter: [@kessio_sharon](https://twitter.com/kessio_sharon)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/sharon-kessio-172220b5)
 
 👤 **Abel Seifu**
 
