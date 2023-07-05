@@ -7,8 +7,9 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.first
   end
 
-  protect_from_forgery with: :exception
 
+  protect_from_forgery with: :exception
+  
   before_action :update_allowed_parameters, if: :devise_controller?
 
   protected

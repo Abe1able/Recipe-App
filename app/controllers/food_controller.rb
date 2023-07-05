@@ -6,7 +6,7 @@ class FoodsController < ApplicationController
   def show; end
 
   def new
-    @new = Food.new
+    @food = Food.new
   end
 
   def create
