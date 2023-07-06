@@ -35,12 +35,12 @@ body {
 }
 
 .registration {
-    gap: 1rem;
-    margin-left: 70%;
-    margin-top: 2rem;
-    align-items: center;
+  gap: 1rem;
+  margin-left: 70%;
+  margin-top: 2rem;
+  align-items: center;
 }
-  
+
 .titles {
   font-family: 'Julee', cursive;
   text-align: center;
@@ -70,15 +70,15 @@ body {
 }
 
 .in {
-    background-color: rgba(4, 178, 4, 0.985);
+  background-color: rgba(4, 178, 4, 0.985);
 }
-  
+
 .sign-out {
-    padding: 0.5rem;
-    color: #ffffffea;
-    background-color: #a30000;
-    border: none;
-    border-radius: 5px;
+  padding: 0.5rem;
+  color: #ffffffea;
+  background-color: #a30000;
+  border: none;
+  border-radius: 5px;
 }
 
 .fa-toggle-off {
