@@ -1,0 +1,22 @@
+<button><%= link_to 'New Food', new_food_path, class: 'new food' %></button>
+<table>
+  <thead>
+  <tr>
+  <th>Name</th>
+  <th>Measurement_Unit </th>
+  <th>Price</th>
+  <th colspan="3"></th>
+  </tr>
+  </thead>
+</table>
+
+<tbody>
+<% @foods.each  do |food|%>
+<tr>
+<td><%= food.name%></td>
+<td><%= food.measurement_unit%></td>
+<td>$<%= food.price%></td>
+<td><%=button_to "destroy", food_path(food), method: :delete, data: {turbo: false} %></td>
+</tr>
+<%end%>
+</tbody>
