@@ -1,4 +1,12 @@
 class ApplicationController < ActionController::Base
+  before_action :current_user
+
+  private
+
+  def current_user
+    @current_user ||= User.first
+  end
+
   protect_from_forgery with: :exception
 
   before_action :update_allowed_parameters, if: :devise_controller?

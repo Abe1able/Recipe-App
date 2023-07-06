@@ -1,0 +1,25 @@
+<button type="button">Add Foods</button>
+
+<%=form_with model: @food, url: foods_url, method: :post, do |food|%>
+<div class="new_food_container">
+ <div>
+ <%=form.text_field :name, placeholder: "food-name"%>
+</div>
+
+ <div>
+<%=form.text_field :measurement_unit, placeholder: "measurement-unit"%>
+</div>
+
+<div>
+<%= form.number_field :price, placeholder: "price"%>
+</div>
+
+<div>
+<%= form.number_field :quantity, placeholder: "quantity"%>
+</div>
+
+<%= form.submit "Add Successfully"%>
+
+
+<div>
+<%end%>
