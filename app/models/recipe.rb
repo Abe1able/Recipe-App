@@ -8,6 +8,6 @@ class Recipe < ApplicationRecord
   validates :description, presence: true
 
   def total_price
-    recipe_foods.sum{ |item| item.quantity * item.food.price}
+    recipe_foods.sum { |item| item.quantity * item.food.price }
   end
 end
