@@ -39,7 +39,7 @@ body {
   margin-left: 70%;
   margin-top: 2rem;
   align-items: center;
-	width: 12%;
+  width: 12%;
 }
 
 .titles {
@@ -155,7 +155,6 @@ body {
   font-size: 2rem;
 }
 
-
 table {
   width: 90%;
   margin-top: 2rem;
@@ -180,7 +179,6 @@ thead {
   background-color: #3a3131;
   color: #ffffffea;
 }
-
 
 .nav {
   width: 100%;

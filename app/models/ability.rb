@@ -7,7 +7,7 @@ class Ability
     return unless user.present?
 
     can(:manage, Recipe, user:)
-    can(:manage, Food, user: )
+    can(:manage, Food, user:)
     can(:manage, RecipeFood, user:)
     return unless user.role == 'admin'
 
