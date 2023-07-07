@@ -1,0 +1,39 @@
+<div class="shopping-container">
+<h1 class="title">Shopping-List</h1>
+
+<div>
+<p>Amount of food items to purchase: <%=@receipe_foods.count%></p>
+<p>Total price for items purchasing: <%="$#{total}"%></p>
+</div>
+
+<div class="table-container">
+ <table>
+ <%if @receipe_foods.empty%>
+  <p>No ingredients included on recipe yet... </p>
+<% else %>
+ <thead>
+ <tr>
+     <th>Food</th>
+      <th>Quantity</th>
+      <th>Price</th>
+ <tr>
+ </thead>
+   <tbody>
+    <% @recipe_foods.each do |item| %>
+      <tr>
+        <td><%= item.food.name %></td>
+        <td><%= item.quantity %><%= item.food.measurement_unit %></td>
+        <td><%= "$#{item.quantity.to_i * item.food.price}" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+ <%end%>
+ </table>
+</div>
+
+<div>
+  <%= link_to '<i class="fa-solid fa-arrow-left"></i>'.html_safe, recipe_path(@recipe.id), class: "back-arrow links" %>
+</div>
+
+
+</div>
