@@ -1,4 +1,6 @@
 class FoodsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @foods = Food.all.includes([:user])
   end
@@ -10,7 +12,7 @@ class FoodsController < ApplicationController
   end
 
   def create
-    @food = Food.new(params.require(:foods).permit(:name, :measurement_unit, :price, :quantity))
+    @food = Food.new(food_params)
     @food.user_id = current_user.id
     if @food.save
       redirect_to foods_path

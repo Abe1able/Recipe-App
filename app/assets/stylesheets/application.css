@@ -39,6 +39,7 @@ body {
   margin-left: 70%;
   margin-top: 2rem;
   align-items: center;
+  width: 12%;
 }
 
 .titles {
@@ -152,4 +153,47 @@ body {
   margin-top: 8rem;
   color: #3a3131;
   font-size: 2rem;
+}
+
+table {
+  width: 90%;
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid #3a3131;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #a30000b1;
+  color: #fff;
+}
+
+thead {
+  background-color: #3a3131;
+  color: #ffffffea;
+}
+
+.nav {
+  width: 100%;
+  align-items: center;
+  background-color: #3a3131;
+}
+
+.ul {
+  list-style: none;
+  width: 30rem;
+  gap: 1rem;
+  margin-left: 40%;
+}
+
+.image {
+  width: 5rem;
+  margin-left: 5%;
 }
