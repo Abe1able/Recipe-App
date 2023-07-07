@@ -179,3 +179,22 @@ thead {
   background-color: #3a3131;
   color: #ffffffea;
 }
+
+
+.nav {
+  width: 100%;
+  align-items: center;
+  background-color: #3a3131;
+}
+
+.ul {
+  list-style: none;
+  width: 30rem;
+  gap: 1rem;
+  margin-left: 40%;
+}
+
+.image {
+  width: 5rem;
+  margin-left: 5%;
+}
