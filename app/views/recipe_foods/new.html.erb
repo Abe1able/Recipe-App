@@ -1,4 +1,9 @@
-<%= form_with model: @recipe do |form| %>
+<%= form_with model: [@recipe, @recipe.recipe_foods.create] do |form| %>
+  <div>
+  <%= form.label :food %>
+  <%= form.select :food_id, Food.all.collect {|item| [item.name, item.id] },
+    { include_blank: true } %>
+  </div>
   <div>
     <%= form.label :quantity %>
     <%= form.number_field :quantity %>
