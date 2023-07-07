@@ -21,8 +21,8 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: localhost
-  username: postgres
-  password: password
+  username: abel
+  password: 3124
   port: 5432
 development:
   <<: *default
@@ -60,8 +60,8 @@ test:
   <<: *default
   database: Recipe_App_test
   host: localhost
-  username: postgres
-  password: password
+  username: abel
+  password: 3124
   port: 5432
 
 # As with config/credentials.yml, you never want to store sensitive information,
